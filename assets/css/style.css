@@ -11,6 +11,8 @@
     font-family: "Helvetica", "Arial", sans-serif;
     color: var(--reg-text); 
 }
+
+
 button, 
 #answer-choice li{
     background-color: var(--button-background);
@@ -26,7 +28,7 @@ button:active,
 }
 main{
     display: flex;
-     justify-content: space-between;
+    justify-content: space-between;
 }
 #high-score{
     padding: 1%;
@@ -50,9 +52,7 @@ main{
     width:75%; 
 }
 
-#bookends{
-    display: flex;
-    flex-direction: column;
+#intro{
     align-items: center;
     padding: 1%; 
     margin: 1%;
@@ -61,7 +61,7 @@ h1{
     font-size: 50px;
     margin: 1%; 
 }
-#bookends p{
+#intro p{
     margin: 1%; 
 }
 #start-quiz{
@@ -70,8 +70,6 @@ h1{
 }
 
 #quiz-section{
-    display: flex;
-    flex-direction: column;
     align-items: left;
     padding: 1%; 
     margin: 1%; 
@@ -105,9 +103,33 @@ label{
     margin: 1% 0; 
 }
 
-#feedback{
+#feedback h4{
     color: var(--feedback-text); 
     font-size: 20px; 
-    font-weight: 100;
+    font-weight: 500;
     font-style: italic;
+}
+
+#timer {
+    width: fit-content;
+    padding: 1%; 
+    margin: 1%;
+}
+
+#scores-list-end{
+    padding: 1%;
+    margin: 1%; 
+    list-style-type: none;
+}
+#scores-list-end li{
+    padding: 2px; 
+    margin: 2px;
+}
+#special-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hide{
+    display: none;
 }
