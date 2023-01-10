@@ -9,29 +9,48 @@
 </head>
 <body>
     <main>
-    <div id="high-score">
-        <p>View high scores:</p>
-        <ol id="scores-list"></ol>
-    </div>
     <div id="center">
-        <div id="bookends">
+        <div id="intro" class="special-display">
             <h1>Coding Quiz Challenge</h1> 
             <p>Try to answer the following code-releated questions within the time limit.</p>
             <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
             <button id=start-quiz>Start Quiz!</button>
         </div>
-        <div id="quiz-section">
-            <h2 id="questions"></h2>
+        <div id="quiz-section" class="hide">
+            <h2 id="questions">Question</h2>
             <ol id="answer-choice">
+                <li>Answer choice 1</li>
+                <li>Answer choice 2</li>
+                <li>Answer choice 3</li>
+                <li>Answer choice 4</li>
             </ol>
         </div>
-        <form>
-            <h3></h3>
+        <div id="feedback" class="hide">
+            <hr>
+            <h4>CORRECT!</h4>
+        </div>
+        <form id='completed' class="hide">
+            <h3>All done!</h3>
             <p></p>
+            <div id="submission">
+                <label>Enter initials:</label>
+                <input id="initials-input" type="text" name="initials" for="initials">
+                <button id="submit">Submit!</button>
+            </div>
         </form>
+        <div id="scores" class="hide">
+            <button id="return">Go back</button>
+            <button id="reset">Reset scores</button>
+            <h4 id="scores-head">Previous Scores:</h4>
+            <ul id="scores-list-end">
+            </ul>
+            
+        </div>
     </div>
-    <div id="timer"></div>
+    <div id="timer">
+        Time: 75
+    </div>
     </main>
-    <script href="assets/script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
