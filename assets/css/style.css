@@ -37,6 +37,7 @@ main{
 #high-score p {
     color: var(--button-highlight); 
 }
+
 #scores-list li {
     padding: 3%;
     margin: 5% 1%; 

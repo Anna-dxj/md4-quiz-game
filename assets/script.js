@@ -108,6 +108,7 @@ function chooseAnswer(event) {
         nextQuestion()
     } else {
         formDiv.removeAttribute('class');
+        formEl.removeAttribute('class');
         quizDiv.setAttribute('class', 'hide');
         feedbackDiv.setAttribute('class','hide') 
     }
@@ -158,6 +159,7 @@ function startOver() {
     remainingTime = 75
     timerEl.textContent = "Time: " + remainingTime
     scoresHead.textContent = "Previous Scores"
+    scoresListEnd.textContent = ''
 }
 var scoresListEnd = document.querySelector("#scores-list-end")
 function displayTopScoresUpdate() {
