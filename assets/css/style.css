@@ -13,7 +13,6 @@
     color: var(--reg-text); 
 }
 
-
 button, 
 #answer-choice li{
     background-color: var(--button-background);
@@ -26,9 +25,12 @@ button,
 }
 
 button:hover, 
-#answer-choice li:hover {
+button:active,
+#answer-choice li:hover,
+#answer-choice li:active {
     background-color: var(--button-highlight);
 }
+
 button:active, 
 #answer-choice li:active{
     background-color: var(--button-highlight);
@@ -44,6 +46,11 @@ button:active,
 main {
     display: flex;
     justify-content: space-evenly;
+}
+
+.instructions {
+    margin: 2% 1% 0;
+    padding: 1% 2% 2%;
 }
 
 #high-score{
@@ -127,7 +134,7 @@ label{
     margin: 1% 0; 
 }
 
-#feedback h4{
+#feedback h4{ 
     color: var(--feedback-text); 
     font-size: 20px; 
     font-weight: 500;
