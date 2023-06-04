@@ -9,47 +9,51 @@
 </head>
 <body>
     <main>
-    <div id="center">
-        <div id="intro" class="special-display">
-            <h1>Coding Quiz Challenge</h1> 
-            <p>Try to answer the following code-releated questions within the time limit.</p>
-            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-            <button id=start-quiz>Start Quiz!</button>
-        </div>
-        <div id="quiz-section" class="hide">
-            <h2 id="questions">Question</h2>
-            <ol id="answer-choice">
-                <li>Answer choice 1</li>
-                <li>Answer choice 2</li>
-                <li>Answer choice 3</li>
-                <li>Answer choice 4</li>
-            </ol>
-        </div>
-        <div id="feedback" class="hide">
-            <hr>
-            <h4>CORRECT!</h4>
-        </div>
-        <form id='completed' class="hide">
-            <h3>All done!</h3>
-            <p></p>
-            <div id="submission" class="hide">
-                <label>Enter initials:</label>
-                <input id="initials-input" type="text" name="initials" for="initials">
-                <button id="submit">Submit!</button>
+        <div id="center">
+            <div id="intro" class="special-display">
+                <h1>Coding Quiz Challenge</h1> 
+                <p>Try to answer the following code-releated questions within the time limit.</p>
+                <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <div class="center-div">
+                    <button id=start-quiz>Start Quiz!</button>
+                </div>
             </div>
-        </form>
-        <div id="scores" class="hide">
-            <button id="return">Go back</button>
-            <button id="reset">Reset scores</button>
-            <h4 id="scores-head">Previous Scores:</h4>
-            <ul id="scores-list-end">
-            </ul>
-            
+            <div id="quiz-section" class="hide">
+                <h2 id="questions">Question</h2>
+                <ol id="answer-choice">
+                    <li>Answer choice 1</li>
+                    <li>Answer choice 2</li>
+                    <li>Answer choice 3</li>
+                    <li>Answer choice 4</li>
+                </ol>
+            </div>
+            <div id="feedback" class="hide">
+                <hr>
+                <h4>CORRECT!</h4>
+            </div>
+            <form id='completed' class="hide">
+                <h3>All done!</h3>
+                <div id="submission" class="hide">
+                    <label>Enter initials:</label>
+                    <input id="initials-input" type="text" name="initials" for="initials">
+                    <button id="submit">Submit!</button>
+                </div>
+            </form>
+            <div id="scores" class="hide">
+                <div id="btn-menu">
+                    <button id="return">Go back</button>
+                    <button id="reset">Reset scores</button>
+                </div>
+                <div id="saved-scores-div">
+                    <h4 id="scores-head">Previous Scores:</h4>
+                    <ol id="scores-list-end">
+                </div>
+                </ol>
+            </div>
         </div>
-    </div>
-    <div id="timer">
-        Time: 75
-    </div>
+        <div class="side">
+            <p id="timer" class="timer-dec">Time: 75</p>
+        </div>
     </main>
     <script src="assets/script.js"></script>
 </body>

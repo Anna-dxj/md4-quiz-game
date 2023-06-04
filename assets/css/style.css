@@ -1,6 +1,7 @@
 :root {
     --button-text: white; 
     --button-background: #F47C7C;
+    --button-hover: #f47c7c9b;
     --button-highlight:  #ef9f9f; 
     --score-background: #FAD4D4;
     --reg-text: black;
@@ -17,23 +18,39 @@ button,
 #answer-choice li{
     background-color: var(--button-background);
     color: var(--button-text); 
-    border: #e06767;
+    border: transparent;
     border-radius: 5px;
     padding: 1% 5%;
     margin: 1%; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover, 
+#answer-choice li:hover {
+    background-color: var(--button-highlight);
 }
 button:active, 
 #answer-choice li:active{
     background-color: var(--button-highlight);
 }
-main{
+
+.center-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #high-score{
     padding: 1%;
     width: fit-content;
 }
+
 #high-score p {
     color: var(--button-highlight); 
 }
@@ -45,6 +62,7 @@ main{
     border-width: 3px; 
     border-radius: 8px;
 }
+
 #center{
     display: flex; 
     flex-direction: column; 
@@ -58,13 +76,16 @@ main{
     padding: 1%; 
     margin: 1%;
 }
+
 h1{
     font-size: 50px;
     margin: 1%; 
 }
+
 #intro p{
     margin: 1%; 
 }
+
 #start-quiz{
     width: fit-content;
     margin: 1%;
@@ -75,9 +96,11 @@ h1{
     padding: 1%; 
     margin: 1%; 
 }
+
 #questions{
     font-size: 30px;
 }
+
 #answer-choice li {
     padding: 2% 5%;
     margin: 2% 0; 
@@ -111,26 +134,71 @@ label{
     font-style: italic;
 }
 
-#timer {
+#submission {
+    margin: 1%; 
+    padding: 1%;
+}
+
+#btn-menu {
+    margin: 0% 1% 1%;
+    padding: 0% 1% 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#saved-scores-div {
+    margin: 0 1%;
+    padding: 0 1%;
+}
+.side {
+    /* width: 10%; */
     width: fit-content;
-    padding: 1%; 
+    padding: 1% 0; 
     margin: 1%;
+}
+
+#scores-title {
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+#timer {
+    width: 100%;
+}
+
+.timer-dec {
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.2rem;
+    border-bottom: rgb(181, 181, 181) solid 1px; 
+}
+
+#side-score {
+    background-color: var(--button-highlight);
+    padding: 0.2rem;
+}
+
+#side-score ol {
+    margin: 1%;
+    padding: 1%;
 }
 
 #scores-list-end{
     padding: 1%;
     margin: 1%; 
-    list-style-type: none;
+    /* list-style-type: none; */
 }
+
 #scores-list-end li{
     padding: 2px; 
     margin: 2px;
 }
+
 #special-display{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .hide{
     display: none;
 }
